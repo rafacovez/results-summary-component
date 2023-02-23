@@ -1,0 +1,101 @@
+:root {
+    --font-size: 1em;
+    --font-regular: 400;
+    --font-bold: 700;
+    --font-family: 'Arial', sans-serif;
+    --light-red: hsl(0, 100%, 67%);
+    --orange-yellow: hsl(39, 100%, 56%);
+    --green-teal: hsl(166, 100%, 37%);
+    --cobalt-blue: hsl(234, 85%, 45%);
+    --light-slate-blue: hsl(252, 100%, 67%);
+    --light-royal-blue: hsl(241, 81%, 54%);
+    --violet-blue: hsla(256, 72%, 46%, 1);
+    --persian-blue: hsla(241, 72%, 46%, 0);
+    --white: hsl(0, 0%, 100%);
+    --pale-blue: hsl(221, 100%, 96%);
+    --light-lavender: hsl(241, 100%, 89%);
+    --dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5 {
+    font-weight: var(--font-bold);
+    line-height: calc(var(--font-size) * 1);
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-weight: var(--font-regular);
+    line-height: calc(var(--font-size) * 1.6);
+    margin: 0;
+    padding: 0;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+input, textarea, button, select {
+    font: inherit;
+}
+
+img, picture, svg, video, object {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+.modal__result {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 2rem 2rem 2rem;
+    background-image: linear-gradient(var(--light-slate-blue
+    ), var(--light-royal-blue
+    ));
+    color: var(--light-lavender);
+    border-radius: 0 0 32px 32px;
+    text-align: center;
+}
+
+.modal__result--heading {
+    font-size: calc(var(--font-size) * 1);
+    font-weight: var(--font-bold);
+}
+
+.modal__result--rating {
+    font-size: calc(var(--font-size) * 1.6);
+    font-weight: var(--font-bold);
+    color: var(--pale-blue);
+}
+
+.modal__result--info {
+    font-size: calc(var(--font-size) * 1);
+    font-weight: var(--font-regular);
+}
