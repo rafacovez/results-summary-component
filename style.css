@@ -111,7 +111,7 @@ img, picture, svg, video, object {
 }
 
 .modal__result--rating {
-    font-size: calc(var(--font-size) * 1.6);
+    font-size: calc(var(--font-size) * 1.2);
     font-weight: var(--font-bold);
     color: var(--pale-blue);
 }
@@ -121,4 +121,29 @@ img, picture, svg, video, object {
     font-weight: var(--font-medium);
     max-width: 280px;
     margin: 0 auto;
+}
+
+.modal__summary {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+    color: var(--dark-gray-blue);
+}
+
+.modal__summary--heading {
+    font-size: calc(var(--font-size) * 1.2);
+    font-weight: var(--font-bold);
+}
+
+.modal__summary--btn {
+    text-align: center;
+    font-size: calc(var(--font-size) * 1.2);
+    font-weight: var(--font-bold);
+    background-color: var(--dark-gray-blue);
+    color: var(--pale-blue);
+    width: 100%;
+    padding: 1rem 0;
+    border-radius: 32px;
+    cursor: pointer;
 }
