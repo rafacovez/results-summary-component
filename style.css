@@ -188,6 +188,11 @@ img, picture, svg, video, object {
     z-index: 50;
 }
 
+.stat-label {
+    display: flex;
+    gap: 1rem;
+}
+
 .stat-category.red::after {
     background-color: var(--light-red);
 }
