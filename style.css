@@ -178,8 +178,7 @@ img, picture, svg, video, object {
     z-index: 100;
 }
 
-.stat-category.red::after {
-    background-color: var(--light-red);
+.stat-category::after {
     opacity: 0.1;
     content: "";
     width: 100%;
@@ -187,6 +186,10 @@ img, picture, svg, video, object {
     position: absolute;
     inset: 0;
     z-index: 50;
+}
+
+.stat-category.red::after {
+    background-color: var(--light-red);
 }
 
 .stat-category.red > .stat-label {
@@ -199,13 +202,6 @@ img, picture, svg, video, object {
 
 .stat-category.yellow::after {
     background-color: var(--orange-yellow);
-    opacity: 0.1;
-    content: "";
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    inset: 0;
-    z-index: 50;
 }
 
 .stat-category.green > .stat-label {
@@ -214,13 +210,6 @@ img, picture, svg, video, object {
 
 .stat-category.green::after {
     background-color: var(--green-teal);
-    opacity: 0.1;
-    content: "";
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    inset: 0;
-    z-index: 50;
 }
 
 .stat-category.blue > .stat-label {
@@ -229,13 +218,6 @@ img, picture, svg, video, object {
 
 .stat-category.blue::after {
     background-color: var(--cobalt-blue);
-    opacity: 0.1;
-    content: "";
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    inset: 0;
-    z-index: 50;
 }
 
 .stat-category__score {
